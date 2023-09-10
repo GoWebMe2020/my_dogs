@@ -19,8 +19,9 @@ Animals API (https://api-ninjas.com/api/dogs)
 
 ## User Stories
 
-- [ ] As a user, I would like to see the search bar on the home page with a search button.
-- [ ] As a user, I would like to enter an dog breed and see what is returned.
+- [x] As a user, I would like to see the search bar on the home page with a search button.
+- [x] As a user, I would like to enter an dog breed into the input and have it return JSON data.
+- [ ] As a user, I would like to see the JSON data displayed on the home page.
 
 ## References
 

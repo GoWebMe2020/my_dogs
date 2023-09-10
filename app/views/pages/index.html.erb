@@ -1,6 +1,12 @@
 <h1>This is the home page</h1>
-<form action="">
+<form action="" id="dog_form">
   <label for="dog">Dog Species</label>
   <input type="text" id="dog_input">
-  <button type="button" id="dog_search_button">Search</button>
+  <button type="submit">Search</button>
 </form>
+
+<script>
+  const dogsApiKey = '<%= @dogs_api_key %>'
+</script>
+<%= javascript_include_tag "index" %>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
