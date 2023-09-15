@@ -1,3 +1,34 @@
 <h1>Dog#show</h1>
-<p><%= @dog.name%></p>
+<p><%= @dog.name %></p>
+<div>
+  <div>
+    <img src="<%= @dog.image_link%>" alt="">
+  </div>
+  <div>
+    <ul>
+      <li>good_with_children: <%= @dog.good_with_children %></li>
+      <li>good_with_other_dogs: <%= @dog.good_with_other_dogs %></li>
+      <li>shedding: <%= @dog.shedding %></li>
+      <li>grooming: <%= @dog.grooming %></li>
+      <li>drooling: <%= @dog.drooling %></li>
+      <li>coat_length: <%= @dog.coat_length %></li>
+      <li>good_with_strangers: <%= @dog.good_with_strangers %></li>
+      <li>playfulness: <%= @dog.playfulness %></li>
+      <li>protectiveness: <%= @dog.protectiveness %></li>
+      <li>trainability: <%= @dog.trainability %></li>
+      <li>energy: <%= @dog.energy %></li>
+      <li>barking: <%= @dog.barking %></li>
+      <li>min_life_expectancy: <%= @dog.min_life_expectancy %></li>
+      <li>max_life_expectancy: <%= @dog.max_life_expectancy %></li>
+      <li>max_height_male: <%= @dog.max_height_male %></li>
+      <li>max_height_female: <%= @dog.max_height_female %></li>
+      <li>max_weight_male: <%= @dog.max_weight_male %></li>
+      <li>max_weight_female: <%= @dog.max_weight_female %></li>
+      <li>min_height_male: <%= @dog.min_height_male %></li>
+      <li>min_height_female: <%= @dog.min_height_female %></li>
+      <li>min_weight_male: <%= @dog.min_weight_male %></li>
+      <li>min_weight_female: <%= @dog.min_weight_female %></li>
+    </ul>
+  </div>
+</div>
 

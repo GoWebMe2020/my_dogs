@@ -16,7 +16,7 @@ class DogsController < ApplicationController
       if existing_dog
         redirect_to dog_path(existing_dog)
       else
-        new_dog = dog_service.create_dog(dog_data[0].except("image_link"))
+        new_dog = dog_service.create_dog(dog_data[0])
 
         if new_dog.valid?
           redirect_to dog_path(new_dog)
