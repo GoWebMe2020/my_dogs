@@ -1,6 +1,1 @@
 <h1>This is the home page</h1>
-<%= form_tag(request_dog_path, method: "post", id: "dog_form") do %>
-  <label for="dog_breed">Dog Species</label>
-  <%= text_field_tag :dog_breed, nil, id: "dog_breed" %>
-  <%= submit_tag "Search" %>
-<% end %>

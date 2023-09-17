@@ -1,0 +1,48 @@
+#search_form_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid green;
+  border-radius: 25px;
+  background-color: green;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+
+  i {
+    color: white;
+  }
+}
+
+.display_form {
+  width: 400px;
+  padding: 10px;
+  background-color: rgb(195, 195, 195);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    background-color: white;
+    padding: 10px;
+
+    .search_form_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    input#dog_breed {
+      margin: 10px 0;
+    }
+  }
+}
+
+.hide_form {
+  display: none;
+}

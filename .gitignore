@@ -32,3 +32,6 @@
 
 # Env File
 .env
+
+# Other dependencies
+/node_modules

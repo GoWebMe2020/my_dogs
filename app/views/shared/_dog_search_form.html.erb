@@ -1,0 +1,16 @@
+<div id="search_form_btn">
+  <i id="search_form_icon" class="fa-solid fa-magnifying-glass"></i>
+</div>
+
+<div id="search_form" class="hide_form">
+  <%= form_tag(request_dog_path, method: "post", id: "dog_form") do %>
+    <div class="search_form_header">
+      <label for="dog_breed">Search a Breed</label>
+      <i id="close_form_btn" class="fa-solid fa-xmark"></i>
+    </div>
+    <%= text_field_tag :dog_breed, nil, id: "dog_breed" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
+<%= javascript_include_tag "search_form" %>
