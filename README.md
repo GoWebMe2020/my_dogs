@@ -22,7 +22,11 @@ Animals API (https://api-ninjas.com/api/dogs)
 - [x] As a user, I would like to see the search bar on the home page with a search button.
 - [x] As a user, I would like to enter an dog breed into the input and have it return JSON data.
 - [x] As a user, I would like to see the JSON data displayed on the home page.
-- [x] As a user, I would prefer it the dogs were stored in a database as and when requested, if they do not already exist. (Image not included)
+- [x] As a user, I would prefer it the dogs were stored in a database as and when requested, if they do not already exist. (Image not included).
+- [x] As a user, I would like the image to be included in the database and displayed.
+- [x] As a user, I would like the search form available on every page.
+- [x] As a user, I would like the pages to be styled.
+- [ ] As a user, I would like to select the dog from a list if the data returns more than 1, and then display the information.
 
 ## References
 

@@ -10,9 +10,18 @@
   position: absolute;
   bottom: 100px;
   right: 100px;
+  transition: all 0.5s ease-in-out;
 
   i {
     color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:hover {
+    background-color: white;
+    i {
+      color: green;
+    }
   }
 }
 

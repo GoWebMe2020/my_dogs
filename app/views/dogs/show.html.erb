@@ -1,36 +1,105 @@
-<h1>Dog#show</h1>
+<section id="dog_page" data-image-link="<%= @dog.image_link %>">
+  <div class="dog_data">
 
+    <div class="left_block">
+      <h1><%= @dog.name %></h1>
 
-<p><%= @dog.name %></p>
-<div>
-  <div>
-    <img src="<%= @dog.image_link%>" alt="">
+      <div class="rating_block">
+        <div class="rating">
+          <p>Good With Children: </p>
+          <div class="star-rating" data-rating="<%= @dog.good_with_children %>"></div>
+        </div>
+        <div class="rating">
+          <p>Good With Other Dogs: </p>
+          <div class="star-rating" data-rating="<%= @dog.good_with_other_dogs %>"></div>
+        </div>
+      </div>
+
+      <div class="rating_block">
+        <div class="rating">
+          <p>Shedding: </p>
+          <div class="star-rating" data-rating="<%= @dog.shedding %>"></div>
+        </div>
+        <div class="rating">
+          <p>Grooming: </p>
+          <div class="star-rating" data-rating="<%= @dog.grooming %>"></div>
+        </div>
+      </div>
+
+      <div class="rating_block">
+        <div class="rating">
+          <p>Drooling: </p>
+          <div class="star-rating" data-rating="<%= @dog.drooling %>"></div>
+        </div>
+        <div class="rating">
+          <p>Coat Length: </p>
+          <div class="star-rating" data-rating="<%= @dog.coat_length %>"></div>
+        </div>
+      </div>
+
+      <div class="rating_block">
+        <div class="rating">
+          <p>Good With Strangers: </p>
+          <div class="star-rating" data-rating="<%= @dog.good_with_strangers %>"></div>
+        </div>
+        <div class="rating">
+          <p>Playfulness: </p>
+          <div class="star-rating" data-rating="<%= @dog.playfulness %>"></div>
+        </div>
+      </div>
+
+      <div class="rating_block">
+        <div class="rating">
+          <p>Protectiveness: </p>
+          <div class="star-rating" data-rating="<%= @dog.protectiveness %>"></div>
+        </div>
+        <div class="rating">
+          <p>Trainability: </p>
+          <div class="star-rating" data-rating="<%= @dog.trainability %>"></div>
+        </div>
+      </div>
+
+      <div class="rating_block">
+        <div class="rating">
+          <p>Energy: </p>
+          <div class="star-rating" data-rating="<%= @dog.energy %>"></div>
+        </div>
+        <div class="rating">
+          <p>Barking: </p>
+          <div class="star-rating" data-rating="<%= @dog.barking %>"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right_block">
+      <img src="<%= @dog.image_link%>" alt="">
+
+        <div class="data_block">
+          <div class="data">
+            <p>Life Expectancy: <%= @dog.min_life_expectancy.to_i %> - <%= @dog.max_life_expectancy.to_i %> years</p>
+          </div>
+        </div>
+
+        <div class="data_block">
+          <div class="data">
+            <p>Height Male: <%= @dog.min_height_male.to_i %>&Prime; - <%= @dog.max_height_male.to_i %>&Prime; </p>
+          </div>
+          <div class="data">
+            <p>Height Female: <%= @dog.min_height_female.to_i %>&Prime; - <%= @dog.max_height_female.to_i %>&Prime; </p>
+          </div>
+        </div>
+
+        <div class="data_block">
+          <div class="data">
+            <p>Weight Male: <%= @dog.min_weight_male.to_i %>lb - <%= @dog.max_weight_male.to_i %>lb </p>
+          </div>
+          <div class="data">
+            <p>Weight Female: <%= @dog.min_weight_female.to_i %>lb - <%= @dog.max_weight_female.to_i %>lb</p>
+          </div>
+        </div>
+
+    </div>
   </div>
-  <div>
-    <ul>
-      <li>good_with_children: <%= @dog.good_with_children %></li>
-      <li>good_with_other_dogs: <%= @dog.good_with_other_dogs %></li>
-      <li>shedding: <%= @dog.shedding %></li>
-      <li>grooming: <%= @dog.grooming %></li>
-      <li>drooling: <%= @dog.drooling %></li>
-      <li>coat_length: <%= @dog.coat_length %></li>
-      <li>good_with_strangers: <%= @dog.good_with_strangers %></li>
-      <li>playfulness: <%= @dog.playfulness %></li>
-      <li>protectiveness: <%= @dog.protectiveness %></li>
-      <li>trainability: <%= @dog.trainability %></li>
-      <li>energy: <%= @dog.energy %></li>
-      <li>barking: <%= @dog.barking %></li>
-      <li>min_life_expectancy: <%= @dog.min_life_expectancy %></li>
-      <li>max_life_expectancy: <%= @dog.max_life_expectancy %></li>
-      <li>max_height_male: <%= @dog.max_height_male %></li>
-      <li>max_height_female: <%= @dog.max_height_female %></li>
-      <li>max_weight_male: <%= @dog.max_weight_male %></li>
-      <li>max_weight_female: <%= @dog.max_weight_female %></li>
-      <li>min_height_male: <%= @dog.min_height_male %></li>
-      <li>min_height_female: <%= @dog.min_height_female %></li>
-      <li>min_weight_male: <%= @dog.min_weight_male %></li>
-      <li>min_weight_female: <%= @dog.min_weight_female %></li>
-    </ul>
-  </div>
-</div>
+</section>
 
+<%= javascript_include_tag "dog_page" %>
