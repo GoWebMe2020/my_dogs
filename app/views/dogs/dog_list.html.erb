@@ -1,0 +1,11 @@
+<section id="dog_list_page">
+  <div class="dog_list_box">
+    <% @dog_data.each do |dog| %>
+      <div class="dog_box">
+        <h1><%= dog["name"] %></h1>
+        <img src="<%= dog["image_link"]%>" alt="">
+        <%= link_to "Learn More", store_and_show_dog_path(dog_data: dog), class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+</section>
