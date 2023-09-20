@@ -1,0 +1,26 @@
+#home_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid green;
+  border-radius: 25px;
+  background-color: green;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transition: all 0.5s ease-in-out;
+
+  i {
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:hover {
+    background-color: white;
+    i {
+      color: green;
+    }
+  }
+}
