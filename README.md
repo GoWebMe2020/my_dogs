@@ -26,7 +26,7 @@ Animals API (https://api-ninjas.com/api/dogs)
 - [x] As a user, I would like the image to be included in the database and displayed.
 - [x] As a user, I would like the search form available on every page.
 - [x] As a user, I would like the pages to be styled.
-- [ ] As a user, I would like to select the dog from a list if the data returns more than 1, and then display the information.
+- [x] As a user, I would like to select the dog from a list if the data returns more than 1, and then display the information.
 
 ## References
 
